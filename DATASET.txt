@@ -1,0 +1,51 @@
+For this project, I have chosen a dataset of historic National Football League game and betting information. 
+The dataset has 3 files including the main data file, the stadiums file, and the team file. All data goes back to the
+inception of the super bowl era of the National Football League in 1966.
+
+Main file variables:
+schedule_date (the specific date of the game), schedule_season (which year), team_home (the home team of the game), 
+score_home (final score of the home team), score_away (final score of the away team), team_away (the away team of the game), 
+team_favorite_id (which team was predicted to win), spread_favorite (the betting spread for the game), over_under_line (the 
+betting line for total points), stadium (the name of the game venue), stadium_neutral (whether or not the game was played at a neutral site),
+weather_temperature (the temp at kickoff), weather_wind_mph (wind speed at kickoff), weather_humidity (humidity
+percentage at kickoff), and weather_detail (details such as rain or snow present).
+
+Sample data:
+schedule_date,schedule_season,schedule_week,schedule_playoff,team_home,score_home,score_away,team_away,team_favorite_id,spread_favorite,over_under_line,stadium,stadium_neutral,weather_temperature,weather_wind_mph,weather_humidity,weather_detail
+09/18/2016,2016,2,FALSE,San Diego Chargers,38,14,Jacksonville Jaguars,LAC,-3,47.5,Qualcomm Stadium,FALSE,78,5,,
+09/18/2016,2016,2,FALSE,Washington Redskins,23,27,Dallas Cowboys,WAS,-3,47,FedEx Field,FALSE,84,5,,
+09/19/2016,2016,2,FALSE,Chicago Bears,14,29,Philadelphia Eagles,CHI,-3,43,Soldier Field,FALSE,80,2,,
+09/22/2016,2016,3,FALSE,New England Patriots,27,0,Houston Texans,NE,-1,38.5,Gillette Stadium,FALSE,68,3,,
+09/25/2016,2016,3,FALSE,Buffalo Bills,33,18,Arizona Cardinals,ARI,-5,48,New Era Field,FALSE,62,1,,
+
+nfl_stadiums variables:
+stadium_nameStadium, stadium_locationStadium, stadium_openStadium, stadium_closeStadium, stadium_typeStadium, 
+stadium_addressStadium, stadium_weather_station_codeStadium, stadium_weather_typeStadium, stadium_capacityStadium,
+stadium_surfaceStadium, STATIONStadium, NAMEStadium, LATITUDEStadium, LONGITUDEStadium, ELEVATIONStadium
+
+Sample data:
+stadium_name,stadium_location,stadium_open,stadium_close,stadium_type,stadium_address,stadium_weather_station_code,stadium_weather_type,stadium_capacity,stadium_surface,STATION,NAME,LATITUDE,LONGITUDE,ELEVATION
+StubHub Center,"Los Angeles, CA",2017,,outdoor,"18400 S Avalon Blvd, Carson, CA 90746",90746,warm,27000,Grass,USW00023174,"LOS ANGELES INTERNATIONAL AIRPORT, CA US",33.938,-118.3888,29.6
+Sun Devil Stadium,"Tempe, AZ",1988,2005,outdoor,"500 E Veterans Way, Tempe, AZ 85287",85287,warm,,,US1AZMR0451,"TEMPE 3.6 NNW, AZ US",33.4552,-111.9316,375.2
+Sun Life Stadium,"Miami Gardens, FL",1987,,outdoor,"347 Don Shula Dr, Miami Gardens, FL 33056",33056,warm,,,USW00012839,"MIAMI INTERNATIONAL AIRPORT, FL US",25.7905,-80.3163,8.8
+
+nfl_teams variables: 
+team_name, team_name_short, team_id, team_id_pfr, team_conference, team_division, team_conference_pre2002, team_division_pre2002
+
+Sample data:
+team_name,team_name_short,team_id,team_id_pfr,team_conference,team_division,team_conference_pre2002,team_division_pre2002
+Arizona Cardinals,Cardinals,ARI,CRD,NFC,NFC West,NFC,NFC West
+Phoenix Cardinals,Cardinals,ARI,CRD,NFC,,NFC,NFC East
+St. Louis Cardinals,Cardinals,ARI,ARI,NFC,,NFC,NFC East
+Atlanta Falcons,Falcons,ATL,ATL,NFC,NFC South,NFC,NFC West
+Baltimore Ravens,Ravens,BAL,RAV,AFC,AFC North,AFC,AFC Central
+
+The data is very useful in explaining the outcomes of games on a general level. I hope to leverage this data along with
+a dataset of more specific team statistics to detect trends for NFL game winners. Hopefully, I would be able to create a predictive 
+model for future NFL games and gain a competitive edge in sports gambling.
+
+
+
+
+
+
